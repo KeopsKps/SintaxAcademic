@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sintax Academic</title>
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+<!-- Header -->
+<header class="bg-dark text-white">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
+    <a class="navbar-brand fw-bold" href="{{ url_for('Index') }}">Sintax Academic</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('Index') }}">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('AboutUs') }}">Sobre Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('Courses') }}">Cursos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('Teachers') }}">Profesores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('Contact') }}">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('Login') }}">Iniciar Sesión</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('Register') }}">Registrarse</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-primary py-5 text-center">
+    <div class="container">
+      <h2 class="display-4 fw-bold">Profesores de Sintax Academic</h2>
+      <p class="lead">Conoce a nuestro equipo de profesores altamente calificados para la labor de llevar tu aprendizaje al siguiente nivel</p>
+    </div>
+  </section>
+
+<!-- Teachers Section -->
+<section id="teachers" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Nuestros Profesores</h2>
+        <p>Conoce al equipo de expertos que guiarán tu aprendizaje</p>
+      </div>
+      <div class="row g-4">
+        
+        <!-- Profesor 1 -->
+        <div class="col-md-3">
+          <div class="card border-0 shadow-sm text-center h-100">
+            <div class="position-relative overflow-hidden">
+              <img src="{{ url_for('static', filename='img/teachers/teacher1.jpg') }}" class="card-img-top rounded-top" alt="María López">
+              <div class="teacher-overlay d-flex justify-content-center align-items-center">
+                <div>
+                  <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5>Andrés Gómez</h5>
+              <p class="text-muted mb-1">Especialista en Ciberseguridad</p>
+              <p class="small">Protege sistemas informáticos contra amenazas externas, implementando estrategias avanzadas de seguridad digital.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Profesor 2 -->
+        <div class="col-md-3">
+          <div class="card border-0 shadow-sm text-center h-100">
+            <div class="position-relative overflow-hidden">
+              <img src="{{ url_for('static', filename='img/teachers/teacher2.jpg') }}" class="card-img-top rounded-top" alt="Carlos Díaz">
+              <div class="teacher-overlay d-flex justify-content-center align-items-center">
+                <div>
+                  <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Carlos Díaz</h5>
+              <p class="text-muted mb-1">Experto en Python y Data Science</p>
+              <p class="card-text">Apasionado por los datos y el machine learning, mentor de más de 500 estudiantes.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Profesor 3 -->
+        <div class="col-md-3">
+          <div class="card border-0 shadow-sm text-center h-100">
+            <div class="position-relative overflow-hidden">
+              <img src="{{ url_for('static', filename='img/teachers/teacher3.jpg') }}" class="card-img-top rounded-top" alt="Ana Torres">
+              <div class="teacher-overlay d-flex justify-content-center align-items-center">
+                <div>
+                  <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5>David Herrera</h5>
+              <p class="text-muted mb-1">Científico de Datos</p>
+              <p class="small">Analiza grandes volúmenes de datos para descubrir patrones, generar predicciones y apoyar decisiones empresariales.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Profesor 4 -->
+        <div class="col-md-3">
+          <div class="card border-0 shadow-sm text-center h-100">
+            <div class="position-relative overflow-hidden">
+              <img src="{{ url_for('static', filename='img/teachers/teacher4.jpg') }}" class="card-img-top rounded-top" alt="Juan Pérez">
+              <div class="teacher-overlay d-flex justify-content-center align-items-center">
+                <div>
+                  <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Juan Pérez</h5>
+              <p class="text-muted mb-1">Arquitecto de Bases de Datos</p>
+              <p class="card-text">Diseña e implementa soluciones escalables para bases de datos complejas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profesor 5 -->
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm text-center h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="{{ url_for('static', filename='img/teachers/teacher5.jpg') }}" class="card-img-top rounded-top" alt="Ana Torres">
+                <div class="teacher-overlay d-flex justify-content-center align-items-center">
+                  <div>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Ana Torres</h5>
+                <p class="text-muted mb-1">Ingeniera de Software</p>
+                <p class="card-text">Experta en backend con experiencia en grandes empresas tecnológicas.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profesor 6 -->
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm text-center h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="{{ url_for('static', filename='img/teachers/teacher6.jpg') }}" class="card-img-top rounded-top" alt="Ana Torres">
+                <div class="teacher-overlay d-flex justify-content-center align-items-center">
+                  <div>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">María López</h5>
+                <p class="text-muted mb-1">Especialista en Desarrollo Web</p>
+                <p class="card-text">Con más de 8 años de experiencia construyendo sitios responsivos y optimizados.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profesor 7 -->
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm text-center h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="{{ url_for('static', filename='img/teachers/teacher7.jpg') }}" class="card-img-top rounded-top" alt="Ana Torres">
+                <div class="teacher-overlay d-flex justify-content-center align-items-center">
+                  <div>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5>Laura Martínez</h5>
+                <p class="text-muted mb-1">Ingeniera en Inteligencia Artificial</p>
+                <p class="small">Desarrolla sistemas inteligentes capaces de resolver problemas complejos y automatizar procesos de negocio.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profesor 8 -->
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm text-center h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="{{ url_for('static', filename='img/teachers/teacher8.jpg') }}" class="card-img-top rounded-top" alt="Ana Torres">
+                <div class="teacher-overlay d-flex justify-content-center align-items-center">
+                  <div>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5>Sofía Ramírez</h5>
+                <p class="text-muted mb-1">Desarrolladora Full Stack</p>
+                <p class="small">Experta en la creación de aplicaciones web completas, desde el backend hasta una experiencia de usuario intuitiva y moderna.</p>
+              </div>
+            </div>
+          </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Contact Section -->
+<section id="contact" class="contact section-bg py-5">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-header text-center mb-5">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes preguntas? ¡Estamos aquí para ayudarte!</p>
+      </div>
+  
+      <div class="row gy-4 justify-content-center">
+        <div class="col-lg-4 text-center">
+          <div class="info-box shadow p-4 rounded">
+            <i class="bi bi-geo-alt fs-2 text-primary mb-3"></i>
+            <h3>Ubicación</h3>
+            <p>Calle Ficticia #123, Ciudad Ejemplo</p>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 text-center">
+          <div class="info-box shadow p-4 rounded">
+            <i class="bi bi-envelope fs-2 text-primary mb-3"></i>
+            <h3>Email</h3>
+            <p>gutierrezpedrojose021@gmail.com</p>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 text-center">
+          <div class="info-box shadow p-4 rounded">
+            <i class="bi bi-telephone fs-2 text-primary mb-3"></i>
+            <h3>Teléfono</h3>
+            <p>+505 8264 4010</p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container text-center">
+      <div class="mb-2">
+        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <p class="mb-0">&copy; 2025 <strong>Sintax Academic</strong>. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

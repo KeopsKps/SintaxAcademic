@@ -1,0 +1,70 @@
+/* style.ss personalizado para Mi Academia */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h5 {
+    font-weight: 700;
+  }
+  
+  /* Hero Section */
+  section.bg-primary {
+    background-image: linear-gradient(to right, #004085, #007bff);
+    color: white;
+  }
+  
+  /* Card hover effect */
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  /* Navegación */
+  header nav a {
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  header nav a:hover {
+    color: #ffc107;
+  }
+  
+  /* Formulario */
+  form .form-control {
+    border-radius: 0.5rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #111;
+    font-size: 0.9rem;
+  }
+
+  .teacher-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .card:hover .teacher-overlay {
+    opacity: 1;
+  }
+  
+  .teacher-overlay a {
+    font-size: 1.2rem;
+  }
+
+  .alert {
+    border-radius: 0.5rem;
+    font-weight: 500;
+  }
+  
